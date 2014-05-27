@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>{{title}}</title>
+    <meta http-equiv="Content-Type" Content="text/html; charset=utf-8" />
+    
+    <!-- CSS files! -->
+    <link rel="stylesheet" href="{{external}}/netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link href="{{base}}/{{page}}/index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{{external}}/ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css" />
+    <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    
+    <!-- Javascript files! -->
+    <script src="{{external}}/ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="{{static}}/javascript/jquery.js"><\/script>')</script>
+    <script src="{{external}}/netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="{{static}}/javascript/jquery-ui.js"></script>
+    <script src="{{external}}/cdnjs.cloudflare.com/ajax/libs/keymage/1.0.1/keymage.min.js"></script>
+    <!--<script src="{{static}}/javascript/scrollTo.js"></script>-->
+    <script src="{{base}}/{{page}}/index.js"></script>
+
+    <!-- slider JS files -->
+    <link href="{{static}}/royalslider/royalslider.css" rel="stylesheet" />
+    <script src="{{static}}/royalslider/jquery.royalslider.min.js"></script>
+    <link href="{{static}}/royalslider/minimal-white/rs-minimal-white.css" rel="stylesheet" />
+
+    <!-- META TAGS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> <!-- For mobile! -->
+    <meta name="description" content="Sunsethosting is hosts quality minecraft server for a prive lower than all other hosters! Don't wast time looking further, just take a free trail to test it out! With craftbukkit, multicraft and mysql included!">
+    <meta name="robots" content="index, follow" />
+    <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
+</head>
+<body class="preload">
+  <header><container>
+    <a href="/" title="Sunsethosting mainpage" attr-lang="title:logo link"><img src="http://dral.sshmc.in/images/sunsethosting/black%20on%20alpha.png" alt="Sunsethosting logo | affordable bukkit server hosting" /></a>
+  </container></header>
+
+  <nav><div class="container">
+    <div class="btn-group btn-group-justified btn-group-lg">
+      {{#navigation}}
+        <a class="btn" lang="{{lang}}" href="/{{href}}">{{def}}</a>
+      {{/navigation}}
+    </div>
+  </div></nav>
+  
+  {{{content}}}
+  
+  <div id="social" class="parallax"><div class="container hidden-xs">
+    <div class="col-md-5 col-sm-6"></div>
+    <div class="col-md-2 hidden-sm" to="https://twitter.com/sunsethosting">
+      <img src="{{assets}}/images/features/twitter.png" alt="Our twitter" />
+    </div>
+    <div class="col-md-5 col-sm-6"></div>
+  </div></div>
+  
+  <footer><div class="container">
+    <div class="row">
+      <div class="col-md-3 hidden-xs hidden-sm"> <!-- Hide the horse when on mobile -->
+        <img class=".img-responsive" src="{{assets}}/images/unicorn.png" alt="Unicorns exist!" attr-lang="alt:unicorns exist" />
+      </div>
+      <div class="col-md-3 col-xs-6">
+        <h1>Contact</h1>
+        <ul>
+          <li to="/contact">Leave a message</li>
+          <li to="http://twitter.com/sunsethosting">Twitter feed</li>
+          <li to="http://facebook.com/sunsethosting">Facebook page</li>
+          <li to="http://youtube.com/sunsethosting">Youtube channel</li>
+        </ul>
+      </div>
+      <div class="col-md-3 hidden-xs hidden-sm">
+        
+      </div>
+      <div class="col-md-3 col-xs-6">
+        <p id="dralinc">
+          <lang lang="dralinc" dispensable>Sunsethosting is part of</lang> <br/>
+          <b>Dral .inc</b>
+        </p>
+      </div>
+    </div>
+  </div></footer>
+</body>
+</html>

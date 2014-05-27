@@ -1,0 +1,145 @@
+{{! Yes, Mustache comments are so much nicer :D }}
+
+{{!<div id="subnav">
+    <div><div>
+        <form method="post" action="http://sunsethosting.co.uk/clients/dologin.php">
+            <input type="hidden" name="token" value="df0fefc14ea64f17d39f08fcf3c0b4aec8982450" />
+            Email Address: <input type="text" name="username" size="50" />
+            Password: <input type="password" name="password" size="20" />
+            <input type="submit" value="Login" />
+        </form>
+    </div></div>
+</div>}}
+
+{{! MINECRAFT SERVER TITLE }}
+<div class="inset parallax" style="padding-bottom: 30px; padding-top: 50px;">
+  <div class="container" lang="minecraft">
+    <h1>Minecraft servers!</h1>
+    <p>Created to be played, with love</p>
+  </div>
+</div>
+
+{{! Slider }}
+<div class="container sunset">
+  <div id="sliderContainer">
+        <div class="royalSlider rsMinW">
+            <div class="rsContent" id="slide1">
+                <img class="rsImg" src="{{assets}}/images/slider/1.png" alt="Good yet affordable" />
+                <div class="infoBlock rsABlock" lang="slides.one">
+                    <h1>Simple</h1>
+                    Click and go!
+                    Once you bought the server, it will instantly be created for you.
+                    You have access to your server using the clean and intuitive Multicraft control panel.
+                    Whenever you need help, you can open a support ticket and you will get an helpfull answer in no time!
+                    <br /><br />
+                    <h1>Affordable</h1>
+                    You will get a full featured server, for a very good price!
+                    You won't have to pay any setup fee or additional costs.
+                    The only thing you will have to pay, is the monthly cost.
+                    Via support you can even request a subdomain of sshmc.in for your server, for free!
+                </div>
+            </div>
+            <div class="rsContent" id="slide2">
+                <img class="rsImg" src="{{assets}}/images/slider/2.png" alt="Powerfull performance" />
+                <div class="infoBlock rsABlock" lang="slides.two">
+                    <h1>Powerfull</h1>
+                    Your server will run on a quad-core processor with Hyper threading technology.
+                    It's an intel i7 processor, one of the best possible at the moment.
+                    Your server will run using the latest version of Oracle Java virtual machine. 
+                    Our mysql server has been optimized to run perfect with many instances of plugins like hawkeye and logblock.
+                    The amount of ram you get is dedicated to you. Even when you are not using it, or your server is offline, it won't be used.
+                    This way you can be sure you will always have access to it.
+                    You can focus on managing the community and the plugins, we'll take care of the rest.
+                </div>
+            </div>
+            <div class="rsContent" id="slide3">
+                <img class="rsImg" src="{{assets}}/images/slider/3.png" alt="Super fast support" />
+                <div class="infoBlock rsABlock" lang="slides.three">
+                    <h1>Blazing fast support</h1>
+                    When you create a new support ticket, the whole team will get a notification.
+                    You will be answered in no-time. You can also request basic plugin support.
+                    For a small fee you will get a full-blown plugin man attached to your server.
+                    From him you will get all plugin related support you can want.
+                    <br /><br />
+                    
+                    <h1>Free Trial</h1>
+                    You can get a free three day trial to check the performance.
+                    After the trial perod you can easily convert to a paid package.
+                    <b><a href="{{clients}}/cart.php?gid=2" title="Free trial!">
+                        Get your free trial in less than a minute!
+                    </a></b>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{! Sort of slogan.. something :D }}
+<div class="inset parallax" style="min-height: 70px;">
+  <div class="container" style="font-size: 40px;" lang="sorta slogan">
+    Top-notch minecraft servers for a really good price!
+  </div>
+</div>
+
+<div class="container smallpadding sunset">    
+  {{! FEATURES, all located in features.yml }}
+  <div class="row features">
+    {{#features}}
+      <div class="col-md-6 col-sm-6"><div>
+        <img src="{{assets}}/images/features/{{image}}.png" alt="{{lang}}" />
+    
+        <div lang="features.{{lang}}">
+          {{{default}}}
+        </div>
+      </div></div>
+    {{/features}}
+  </div>
+</div>
+
+<div class="inset parallax" style="margin-top: 20px; margin-bottom: 0;">
+  <div class="container">
+    <!-- SLIDER AND PACKAGE SELECTION -->
+    <div id="slider_container">
+        <b lang="slider.chose">Choose your package</b>
+        <div id="slider"></div>
+        <p class="note">
+            <span lang="slider.amount" dispensable>Amount of ram you would like to have: </span><br />
+            <b id="currentValue">2048mb</b>
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="container sunset">
+  <!-- Currently selected package -->
+  {{#packages}}
+    <div class="row package">
+      <div class="col-sm-8 information">
+        <div class="name">
+            <b>{{name}} <span lang="slider.package" dispensable>Package</span></b>
+        </div>
+        
+        <div class="price">
+            <b>&euro;{{euro}}</b>
+            | <b>${{dollar}}</b>
+            | <b>&pound;{{pound}}</b>
+        </div>
+        
+        <div class="ram">
+            <b>{{ram}}mb</b> <span lang="slider.ram" dispensable>of dedicated ram</span>
+        </div>
+        
+        <!--<button id="trial"><div>
+        Or get a three day free trial! (Paypal required) 
+        </div></button>-->
+      </div>
+      
+      <div class="col-sm-4">
+        <a class="btn checkout" data-url="/clients/cart.php?a=add&amp;pid={{whmcsid}}">
+          <img src="{{assets}}/images/header/packages.png" alt="checkout" /><br />
+          <span lang="slider.checkout" dispensable>Checkout</span> &raquo;
+        </a>
+      </div>
+    </div>
+  {{/packages}}
+</div>

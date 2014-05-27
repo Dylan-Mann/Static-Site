@@ -1,0 +1,47 @@
+# Contains all 'feature' blocks on the homepage :D
+features:
+  - image: bukkit
+    lang: craftbukkit
+    default: >
+      <b>Craftbukkit support</b><br />
+      You can choose from a selection of different server jars, 
+      including craftbukkit allowing you to add plugins and all 
+      sorts of other extras to your server.
+
+  - image: multicraft
+    lang: control panel
+    default: >
+      <b>Multicraft control panel</b><br />
+      We offer an intuitive and simple to use control panel allowing
+      you to manage your entire server quickly and easily from your web browser.
+  
+  - image: mysql
+    lang: mysql
+    default: >
+      <b>Free MySQL database</b><br />
+      We provide a free and fast MySQL database for you to use for your server
+      for plugins such as block loggers.
+    
+  - image: money
+    lang: affordable
+    default: >
+      <b>Super affordable!</b><br />
+      Our servers start from as little as $3.75 per month
+      yet still provide great performance and
+      all the features you would get from a much more costly server.
+
+  - image: fast
+    lang: fast
+    default: >
+      <b>Strong performer</b><br />
+      Sporting intel-i7 quad cores with hyperthreading, 
+      our servers can show of some fancy performance.
+      Want to test it? <a href="http://sshmc.in/trial" title="Free trial">
+      Get a free trial now!</a>
+
+  - image: tekkit
+    lang: mods
+    default: >
+      <b>Mods support</b><br />
+      You can install many popular mods such as Tekkit, 
+      Feed the Beast or even your own custom mod at the click of a button.

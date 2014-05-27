@@ -1,0 +1,59 @@
+{{! Yes, Mustache comments are so much nicer :D }}
+
+<!--<div id="subnav">
+    <div><div>
+        <form method="post" action="http://sunsethosting.co.uk/clients/dologin.php">
+            <input type="hidden" name="token" value="df0fefc14ea64f17d39f08fcf3c0b4aec8982450" />
+            Email Address: <input type="text" name="username" size="50" />
+            Password: <input type="password" name="password" size="20" />
+            <input type="submit" value="Login" />
+        </form>
+    </div></div>
+</div>-->
+
+{{! Slider }}
+<section class="jumbo inset"><div class="container">
+  <h1 lang="slider.products.title">Full expertise on our product</h1>
+  <p lang="slider.products.text">We choose to not offer a enormous wide range of products, but focus on a smaller range. This gives us the oppertunitie to offer you high quality services not seen by any other hoster.</p>
+</div></div>
+
+{{! Slider (Outside the container) }}
+<section id="aslider" class="carousel slide">
+  {{! Indicators }}
+  {{! <ol class="carousel-indicators">
+    <li data-target="#aslider" data-slide-to="0" class="active"></li>
+    <li data-target="#aslider" data-slide-to="1"></li>
+    <li data-target="#aslider" data-slide-to="2"></li>
+  </ol> }}
+  
+  <div class="carousel-inner">
+    <slide>
+      <div class="row">
+        <img class="col-md-6" src="https://sunsethosting.co.uk/assets/new/splash.png" alt="Minecraft servers" />
+        <div class="col-md-6">
+          <h1>Premium minecraft servers</h1>
+          We focus really much on our minecraft servers.
+        </div>
+      </div>
+    </slide>
+  </div>
+</div>
+
+<section id="testemonials">
+  <h1 class="inset parallax"><div class="container" lang="testemonials">
+    {{!People about Sunsethosting}}
+    Testemonials
+  </div></h1>
+
+  <container class="sunset">
+    <!-- Currently selected package -->
+    <div class="row reviews">
+      {{#reviews}}
+        <article class="col-md-4">
+          <p>{{text}}</p>
+          <h5>- {{user}}</h5>
+        </article>
+      {{/reviews}}
+    </div>
+  </container>
+</section>

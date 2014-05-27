@@ -1,0 +1,29 @@
+.bg {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -10;
+}
+
+.bg(@image) {
+  background-image: url('https://sunsethosting.co.uk/assets/images/@{image}');
+}
+
+.bg-topview {
+  .bg;
+  background-image: url('https://sunsethosting.co.uk/assets/images/topview.png');
+  background-position: bottom;
+}
+
+.bg-manhattan {
+  .bg;
+  background-image: url('https://sunsethosting.co.uk/assets/images/manhattan.png');
+  background-position: bottom;
+}
+/*
+.bg-woods {
+  background-image: url('http://sunsethosting.co.uk/assets/new/bg-woods.jpg');
+  background-position: -750px;
+  height: 300px;
+}
+*/

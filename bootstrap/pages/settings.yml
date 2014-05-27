@@ -1,0 +1,26 @@
+Title: Sunsethosting
+
+# Pages in the nav
+navigation:
+- lang: minecraft
+  def: Minecraft
+  href: minecraft
+- lang: vps
+  def: VPS
+  href: vps
+- lang: secretary
+  def: MC reseller
+  href: reseller
+- lang: contact
+  def: Contact
+  href: contact
+- lang: clientarea
+  def: Client login
+  href: clients
+  
+# Folders
+assets: "http://sunsethosting.co.uk/assets"
+static: "http://sunsethosting.co.uk/static"
+clients: "http://sunsethosting.co.uk/clients"
+external: "http:/"
+base: "../../"

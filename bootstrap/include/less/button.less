@@ -1,0 +1,47 @@
+//@import 'shadow';
+//@import 'color';
+@import 'transition';
+
+.button() {
+  border: none !important;
+
+  .color(fade(#222, 0%), fade(#222, 25%));
+  background-color: @header;
+  text-decoration: none;
+  
+  .shadow(0px, 5px, 6px, 0px, rgba(0, 0, 0, 0.5));
+  text-align: center;
+  font-size: 2em;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+
+  .transition(~"*", 0.2s);
+
+  &:hover, &:focus { 
+    //.color(@header - #555, @header - #333);
+    background-color: @header - #333;
+    .shadow(0px, 2px, 2px, 0px);
+  }
+
+  &.pressed {
+     background-color: @header - #333;
+    .shadow(inset 0px, 3px, 3px, 0px);
+    &:hover {
+      background-color: @header - #666;
+      .shadow(inset 0px, 4px, 4px, 0px);
+    }
+  }
+
+  &:disabled, &.disabled, &.disabled:hover, &:disabled:hover {
+    cursor: normal;
+    background-color: @primair;
+    .shadow(0px, 5px, 6px, 0px, rgba(0, 0, 0, 0.5));
+  }
+            
+  img {
+    height: 75%;
+    opacity: 0.5;
+    margin-top: 10%;
+  }
+}

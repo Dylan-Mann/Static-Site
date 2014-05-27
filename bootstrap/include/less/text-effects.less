@@ -1,0 +1,6 @@
+.colorshadow(@basecolor: white, @firstchange: #00E6E6, @size: 30px) {
+  color: @basecolor;
+  text-shadow: -(@size/3) (@size/3) 0px @firstchange,
+               -(@size/3*2) (@size/3*2) 0px @firstchange - #001a1a,
+               -@size @size 0px @firstchange - #001a1a - #010F0F;
+}

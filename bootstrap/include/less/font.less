@@ -1,0 +1,18 @@
+#font {
+  // Set font and line-height in one line
+  .size(@size) {
+    font-size: @size;
+    line-height: normal;
+  }
+
+  // Set the font color, with a good text shadow
+  .color(@color) {
+    color: @color;
+  }
+  .color (@color) when (lightness(@color) < 50%) {
+    text-shadow: 0px 1px 1px white;
+  }
+  .color (@color) when (lightness(@color) >= 50%) {
+    text-shadow: 0px 1px 1px black;
+  }
+}

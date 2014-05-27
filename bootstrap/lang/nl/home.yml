@@ -1,0 +1,72 @@
+slides:
+  one: >
+    <h1>Simpel</h1>
+    Klik en klaar!
+    Zo snel als je je server gekocht hebt wordt hij direct voor je gemaakt.
+    Je kan hem gelijk besturen met het mooie multicraft control panel.
+    En als je toch ooit een probleem of opmerking hebt kan je in een paar klikken een support ticket openen.
+    <br /><br />
+    <h1>Betaalbaar</h1>
+    Je krijgt een server met alles er op en er aan voor een lage prijs.
+    Geen opstart kosten, geen achteraf kosten.
+    Je betaald je maandelijkse kosten. Niet meer, niet minder.
+    Je kan zelfs een subdomein van ons korte sshmc.in domein krijgen, gratis.
+    Zo betaal je voor een één gigabyte server bij ons maar zes euro per maand!
+  two: >
+    <h1>Beresterk</h1>
+    Je server draait op een quad-core processor met hyper-threading technology.
+    Het is daarnaast ook nog een intel-i7 processor, één van de beste van het moment.
+    Ook zal je server gebruik maken van de laatste versie van Oracle Java Virtual machine.
+    Daarmee is hij zo veilig en snel als mogelijk.
+    De ram die je krijgt, is totaal van jou. Wij zullen niet de ram die je niet gebruikt aan andere verkopen, of er eigen programma's op draaien.
+    Zelfs als je server uit staat ben jij de enige die de ram kan gebruiken. Zo weten we zeker dan als jij je server opstart,
+    jij de ram kan gebruiken die voor jou bedoeld is.
+    Vertrouw op onze hard- en software kwaliteiten, dan kan jij je bezig houden met de plugins en de mensen.
+  three: >
+    <h1>support</h1>
+    Wanneer jij een support ticket maakt, wordt ons hele team gewaarschuwd.
+    Dan is het bij ons meestal vechten om wie jou ticket mag beantwoorden.
+    Dus reken maar dat je super snel antwoord krijgt! 
+    Wij geven ook basis plugin hulp.
+    Voor een klein bedrag krijg je volledige plugin hulp.
+    Jouw mannetje installeert dan elke plugin die je wilt!
+    <br /><br />
+    
+    <h1>Proefperiode</h1>
+    Als je nog twijfelt moet je zeker een gratis proeftijd nemen.
+    Hiermee kan je drie dagen lang onze service testen, als je het niets vindt kost het je helemaal niets.
+    Als je verder wilt kan je makkelijk je proef omzetten in een betaald pakket.
+    <a href="http://sunsethosting.co.uk/clients/cart.php?gid=2" title="Free trial!">
+        Krijg hier je proefperiode, kost nog geen minuut!
+    </a>
+    
+sorta slogan: Geweldige minecraft servers voor een goede prijs!
+
+features:
+  craftbukkit: >
+    <b>Craftbukkit server mod</b><br />
+    De meest populaire minecraft server mod, befaamd vanwege de gigantische hoeveelheid plugins die er voor beschikbaar zijn.
+  control panel: >
+    <b>Multicraft paneel</b><br />
+    Het meest gebruikte webcontrolpanel voor minecraft servers. Erg gemakkelijk in gebruik en met veel mogelijkheden.
+  mysql: >
+    <b>Gratis MySQL database</b><br />
+    Je krijgt een gratis MySQL database bij je server. Enige wat jij hoeft te doen, is de login in de plugin instellingen te zetten en de rest wordt automatisch geregeld!
+  affordable: >
+    <b>Betaalbaar</b><br />
+    Servers starten vanaf 3 euro per maand, terwijl je nogsteeds een solide server krijgt met alle mogelijkheden en extra's van een duurdere server.
+  fast: >
+    <b>Zo snel als een cheetah</b><br />
+    Uitgerust met intel-i7 quad cores met hyperthreading, kunnen onze servers wat mooie snelheden laten zien.
+    Eerst zien, dan geloven? <a href="http://sshmc.in/trial" title="Free trial">Neem nu een trial!</a>
+  mods: >
+    <b>Mods ondersteuning</b><br />
+    Standaard heb je Tekkit, Feed the beast en alle forge versies.
+    Als je wilt, kan je ook je eigen JAR installeren!
+    
+slider:
+  chose: Kies je pakket
+  amount: Hoeveelheid RAM die je zou willen hebben
+  package: Pakket
+  ram: eigen ram
+  checkout: Bestellen

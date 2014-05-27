@@ -1,0 +1,275 @@
+@import 'main';
+@import 'button';
+@import 'font';
+@import '3L';
+@import 'transition';
+
+// Less padding for bootstrap containers
+.container.smallpadding {
+  //padding: 
+}
+
+// Better font stuff
+html {
+  font-size: 16px;
+  line-height: 1.65;
+}
+body {
+  font-size: 1rem;
+}
+
+// Other
+body {
+  //font-family: 'Ubuntu',sans-serif !important;
+  background-image: url('http://freaze.nl/img/body_bg.jpg');
+}
+
+.preload * {
+  .transition(none) !important;
+}
+
+b, h1, h2, h3, h4, h5, a {
+    color: @header - #222;
+    font-weight: bold;
+}
+
+// Link style
+a { 
+  text-decoration: underline; 
+  &:hover {
+    color: @header - #222 - #222;
+  }
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+  
+img, a, *:focus {
+    outline: none;
+}
+
+#container, .sunset {
+  color: #222;
+  
+    button {
+     .button;
+    }
+
+    div, button, ul {
+        //loat: left;
+    }
+    
+    h1 {
+        font-size: 40px;
+        padding: 10px;
+        margin: 10px;
+        margin-top: 0px;
+        border-bottom: 1px (@header - #222) solid;
+    }
+    
+    //width: 1010px;
+    overflow: auto;
+    margin: 0px auto;
+    //height: auto;
+    //overflow-x: visible !important;
+    //overflow-y: auto !important;
+    padding-top: 20px;
+
+    > div, article, aside {
+      //.primair;
+    }
+}
+
+nav {
+  //.primair;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+
+  min-height: 60px;
+  z-index: 100;
+  margin-bottom: 0px;
+
+  //.color(fade(#222, 0%), fade(#222, 25%));
+  background-color: #fff - #444;
+  position: relative;
+  
+  padding-top: 5px;
+  padding-bottom: 5px;
+  .shadow(0px, 5px, 10px, 0px);
+
+  // New UL added for the responsive bootstrap nav
+  > div > ul, > div > div {
+    //display: table;
+    border-spacing: 5px;
+  }
+  li, a {
+    .button();
+    height: 43px;
+    border-radius: 3px !important;
+    text-shadow: none !important;
+    font-size: 2em !important;
+    
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    
+    &:hover {
+      color: #bbb !important;
+    }
+  }
+} 
+
+.parallax {
+  //.transition(background-position, .05s, linear);
+  position: relative;
+ // background-image: url('https://sunsethosting.co.uk/assets/new/minecraft_dirt.png');
+  
+  /*&:after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+  }*/
+}
+
+body > h1, .inset {
+  .shadow(inset 2px, 5px, 10px, 0px);
+  padding: 30px 0 20px 0;
+  margin-top: 20px;
+  
+  .color(@main - #222);
+  
+  > div {
+    @import 'fulljustify';
+    .fulljustify();
+    
+    //margin: 0 auto;
+    //width: 1010px;
+    min-height: 100%;
+    text-shadow: 0px 5px 5px black;
+
+    > img {
+        //width: 100px;
+        //loat: left;
+    }
+
+    //> div {
+      //loat: left;
+
+      &, b, h1 {
+        font-size: 20px;
+        line-height: 20px;
+        color: #fff - #222;
+      }
+      
+      &, h1 {
+        font-size: 40px;
+        line-height: 40px;
+      }
+      
+      p { #font > .size(25px); }
+      //}
+  }
+
+  input[type="text"] {
+      width: 200px;
+  }
+
+  input[type="submit"] {
+      //.button(150px, 24px);
+      font-size: 20px;
+  }
+}
+
+
+// Header animation
+.mixi-frames() {
+  0%,100% { background-color: @main + #111; }
+  50% { background-color: @main - #222; }
+}
+@-webkit-keyframes some-animation {.mixi-frames;}
+@-moz-keyframes some-animation {.mixi-frames;}
+@keyframes some-animation {.mixi-frames;}
+
+// Explicitly set the color of the space above the nav:
+header { 
+  //background-color: #fff;
+  background-color: @main;
+  .animation(some-animation 10s infinite);
+  
+  > div {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    text-align: center;
+  
+    img {
+      max-width: 650px;
+      width: 90%; 
+      -webkit-filter: invert(90%);
+    }
+  }
+}
+
+#social {
+  .shadow(inset 0px, 10px, 20px, -2px);
+  margin-top: 10px;
+  min-height: 50px;
+  .color(@main - #222);
+  padding: 10px 0px;
+
+  div, b {
+    font-size: 20px;
+    line-height: 20px;
+    color: #fff - #222;
+    text-shadow: 0px 1px 1px black;
+  }
+  
+  img {
+    display: inline;
+  }
+}
+
+footer {
+    background: @primair;
+    width: 100%;
+    padding-top: 20px;
+    
+    > div {
+      position: relative;
+      .sunset;
+      padding-bottom: 0px;
+      .nonprime;
+      
+      /*> div {
+        .nonprime;
+        height: 180px;
+        position: relative;
+        width: 25%;
+      }*/
+    }
+    
+    > div > div > div {
+      height: 180px;
+    }
+    
+    h1 {
+      margin: 0px !important;
+      padding-left: 0px !important;
+    }
+    
+    img {
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+    }
+    
+    #dralinc {
+        text-align: right;
+        margin-right: 20px;
+    }
+}
